@@ -14,15 +14,37 @@
     .flex {
       display: flex;
     }
-    .column {
-      display: flex;
-      flex-direction: column;
-    }
+
     .margin-top {
       margin-top: 20px;
     }
     .padding-top {
       padding-top: 50px;
+    }
+    .padding-left {
+      padding-left: 15px;
+      padding-top: 15px;
+    }
+    .size {
+      width: 20vw;
+      height: 5vh;
+    }
+    .row {
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .justify {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .checkbox-size {
+      width: 2.5vw;
+      height: 2.5vh;
+    }
+    .inline {
+      display: inline-block;
     }
   </style>
 </head>
@@ -35,14 +57,10 @@
     </div>
     <!-- 출력 -->
     <div class="flex">
-      <div class="column margin-top">
-        <input class="margin-top" type="checkbox">
-        <input class="margin-top" type="checkbox">
-        <input class="margin-top" type="checkbox">
-        <input class="margin-top" type="checkbox">
-        <input class="margin-top" type="checkbox">
+      <div class="row margin-top size">
+        <input class="margin-top checkbox-size" type="checkbox">
+        <div id="text-output" class="padding-left"></div>
       </div>
-      <div id="text-output"></div>
     </div>
   </div>
   <script>
