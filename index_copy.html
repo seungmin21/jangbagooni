@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #root {
+      box-sizing: border-box;
+      width: 100vw;
+      height: 100vh;
+    }
+    .flex {
+      display: flex;
+    }
+
+    .margin-top {
+      margin-top: 20px;
+    }
+    .padding-top {
+      padding-top: 50px;
+    }
+    .padding-left {
+      padding-left: 15px;
+      padding-top: 15px;
+    }
+    .size {
+      width: 20vw;
+      height: 5vh;
+    }
+    .row {
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .justify {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .checkbox-size {
+      width: 2.5vw;
+      height: 2.5vh;
+    }
+    .inline {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <!-- 입력 -->
+    <div>
+      <input type="text" id="search-bar" placeholder="입력하세요.">
+      <input type="button" id="search-button" value="검색">
+    </div>
+    <!-- 출력 -->
+    <div class="flex">
+      <div class="row margin-top size">
+        <input class="margin-top checkbox-size" type="checkbox">
+        <div id="text-output" class="padding-left"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const searchBar = document.getElementById('search-bar');
+    console.dir(searchBar);
+    const searchButton = document.getElementById('search-button');
+    const textOutput = document.getElementById('text-output');
+    
+    searchButton.addEventListener('click', () => {
+      for(let i = 0; i < textOutput)
+    })
+  </script>
+</body>
+</html>
