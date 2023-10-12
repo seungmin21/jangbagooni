@@ -11,9 +11,44 @@
       width: 100vw;
       height: 100vh;
     }
+    .flex {
+      display: flex;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+    .margin-top {
+      margin-top: 20px;
+    }
+    .padding-top {
+      padding-top: 50px;
+    }
   </style>
 </head>
 <body>
+  <div id="root">
+    <!-- 입력 -->
+    <div>
+      <input type="text" id="search-bar" placeholder="입력하세요.">
+      <input type="button" id="search-button">
+    </div>
+    <!-- 출력 -->
+    <div class="flex">
+      <div class="column margin-top">
+        <input class="margin-top" type="checkbox">
+        <input class="margin-top" type="checkbox">
+        <input class="margin-top" type="checkbox">
+        <input class="margin-top" type="checkbox">
+        <input class="margin-top" type="checkbox">
+      </div>
+      <div id="text-output"></div>
+    </div>
+  </div>
+  <script>
+    const searchButton = document.getElementById('search-button');
 
+
+  </script>
 </body>
 </html>
