@@ -10,7 +10,6 @@
     #root {
       width: 100vw;
       height: 100vh;
-      display: flex;
     }
     .box-size {
       width: 20px;
@@ -29,11 +28,20 @@
     <div>
       <textarea name="text" id="text" cols="50" rows="2"></textarea>
     </div>
-    <div></div>
+    <br>
+    <br>
+    <br>
+    <div id="test"></div>
   </div>
   <script>
     const text = document.getElementById("text")
-    console.dir(text)
+    // console.dir(text)
+    const test = document.getElementById("test")
+
+    text.addEventListener("click", () => {
+      // console.log(text.value)
+      test.innerHTML = text.value
+    })
   </script>
 </body>
 
